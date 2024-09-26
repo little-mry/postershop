@@ -21,10 +21,23 @@
     min-height: 17rem;
 }
 
-.remove-button {
+.poster-img  img {
+    border-radius: .3rem .3rem 0 0;
+}
+
+.poster-info {
+    padding: 1rem;
+}
+
+.remove-btn, .buy-btn {
     border: none;
     color: white;
     background-color: red;
     padding: .5rem;
+    margin-top: 1rem;
     border-radius: .3rem;
+}
+
+.buy-btn {
+    font-size: 1.8rem;
 }
