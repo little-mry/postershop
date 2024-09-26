@@ -1,12 +1,12 @@
 .cart-wrapper {
+    width: 100%;
     display: grid;
     gap: 2rem;
-    justify-content: center;
+    place-self: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     padding: 2rem .5rem 1rem .5rem;
 }
-
 
 .poster-cart-con {
     display: flex;
@@ -38,6 +38,38 @@
     border-radius: .3rem;
 }
 
+.cart-summary {
+    display: grid;
+    gap: .5rem;
+    grid-template-areas: 
+    "sum-header-article . sum-header-amount sum-header-cost"
+    "article-1 . amount-1 cost-1"
+    "article-2 . amount-2 cost-2"
+    "cart-total . . cart-amount";
+}
+
+.header-article {grid-area: sum-header-article;}
+.header-amount {grid-area: sum-header-amount;}
+.header-cost {grid-area: sum-header-cost;}
+.article-1 {grid-area: article-1;}
+.article-2 {grid-area: article-2;}
+.amount-1 {grid-area: amount-1;}
+.amount-2 {grid-area: amount-2;}
+.cost-1 {grid-area: cost-1;}
+.cost-2 {grid-area: cost-2;}
+.cart-total {grid-area: cart-total;}
+.cart-amount {grid-area: cart-amount;}
+
+.sum-header {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+
 .buy-btn {
     font-size: 1.8rem;
+    margin-top: 2rem;
+    align-self: flex-end;
 }
+
+
