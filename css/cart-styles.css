@@ -1,0 +1,30 @@
+.cart-wrapper {
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    padding: 2rem .5rem 1rem .5rem;
+}
+
+
+.poster-cart-con {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1rem;
+    border-radius: .3rem;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    min-width: 15rem;
+    min-height: 17rem;
+}
+
+.remove-button {
+    border: none;
+    color: white;
+    background-color: red;
+    padding: .5rem;
+    border-radius: .3rem;
+}

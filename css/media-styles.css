@@ -1,0 +1,17 @@
+@media screen and (max-width: 600px) {
+    .wrapper-1 {
+        display: grid;
+        gap: 2rem;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .wrapper-2 , .cart-wrapper {
+        display: grid;
+        gap: 2rem;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
